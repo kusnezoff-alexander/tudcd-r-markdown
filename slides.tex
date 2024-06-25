@@ -17,9 +17,9 @@
 \usepackage{tikz}
 \usepackage{graphicx}
 \usepackage{svg}
-\title{$title$}
-\author{$author$}
-\date{$date$}
+\title{My Presi}
+\author{Your Name}
+\date{June 25, 2024}
 
 \AtBeginSection[]{
   \partpage{\usebeamertemplate***{part page}}
@@ -38,7 +38,34 @@
 
 \maketitle
 
-$body$
+\begin{frame}{title}
+\protect\hypertarget{title}{}
+\begin{block}{Slide 1}
+\protect\hypertarget{slide-1}{}
+Test1 \emph{{\textless Imaginary} Book {not existing\textgreater{}}}
+(\protect\hyperlink{ref-NonExistent}{2024})
+\end{block}
+
+\begin{block}{Slide 2}
+\protect\hypertarget{slide-2}{}
+Test2
+\end{block}
+
+\begin{block}{Slide 3}
+\protect\hypertarget{slide-3}{}
+Test3
+\end{block}
+\end{frame}
+
+\begin{frame}{Neue Section}
+\protect\hypertarget{neue-section}{}
+\hypertarget{refs}{}
+\begin{CSLReferences}{1}{0}
+\leavevmode\vadjust pre{\hypertarget{ref-NonExistent}{}}%
+\emph{{\textless Imaginary} Book {not existing\textgreater{}}}. 2024.
+
+\end{CSLReferences}
+\end{frame}
 
 
 \end{document}

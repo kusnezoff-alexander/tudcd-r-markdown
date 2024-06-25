@@ -25,8 +25,9 @@ Test2
 
 Test3
 
-```{r, results='asis', echo=FALSE}
-cat("\\section{Next Section}\n")
-```
 
 # Neue Section
+
+## HMMM
+
+# References
