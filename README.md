@@ -19,6 +19,6 @@ Instructions on how to write slides in R-Markdown using the `beamerlatex` tudcd.
 3. Call `sudo texhash` (some kind of updating, see `man texhash` for details)
 4. Validate that tud-styles can be found via `kpsewhich beamerthemetud.sty`
 5. Clone this repo
-6. Call `pandoc -s -t beamer slides.md -o slides.tex --template template.tex`
+6. Call `pandoc -s -t beamer slides.md -o slides.pdf--template template.tex`
 7. Start making your slides based on this template
 
