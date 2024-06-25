@@ -1,0 +1,41 @@
+\documentclass{beamer}
+
+% Include additional LaTeX packages here if needed
+\usepackage{amsmath}
+
+\usepackage[style=ieee]{biblatex}
+\setbeamertemplate{bibliography item}{\insertbiblabel}
+% \usepackage[style=ACM-Reference-Format,sortcites,backend=biber]{biblatex}
+\addbibresource{paper.bib} % Include your bibliography file here
+% \bibliographystyle{ACM-Reference-Format}
+% \bibliography{paper}
+
+% Theme choice:
+\usetheme{tud}
+\usepackage[ngerman]{babel}
+\usepackage{caption}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{svg}
+\title{$title$}
+\author{$author$}
+\date{$date$}
+
+\AtBeginSection[]{
+  \partpage{\usebeamertemplate***{part page}}
+}
+
+\newcommand*\inmm[1]{\pgfmathsetmacro\inmmwert{#1 / 1mm}\inmmwert}
+\makeatletter
+\newcommand*\inpt[1]{\setlength\@tempdima{#1}\the\@tempdima}
+\makeatother
+
+
+\begin{document}
+
+\maketitle
+
+$body$
+
+
+\end{document}
