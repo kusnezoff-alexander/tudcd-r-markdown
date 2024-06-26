@@ -13,7 +13,7 @@ number_sections: true
 ## Slide 1
 
 Test1
-
+@NonExistent
 
 ## Slide 2
 
@@ -25,8 +25,9 @@ Test2
 
 Test3
 
-```{r, results='asis', echo=FALSE}
-cat("\\section{Next Section}\n")
-```
 
 # Neue Section
+
+## HMMM
+
+# References

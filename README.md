@@ -7,6 +7,10 @@ This repo is meant to get you started more easily with your beamerlatex-slides w
 **What?** - Template for creating presentations using the tud-cd using R-markdown
 - What is R Markdown?: [R Markdown-Cookbook](https://bookdown.org/yihui/rmarkdown-cookbook/)
 
+## 🕑 In Progress
+
+- [ ] slide with several cols: [Tutorial](https://bookdown.org/yihui/rmarkdown-cookbook/multi-column.html)
+
 ## Beamer
 
 Instructions on how to write slides in R-Markdown using the `beamerlatex` tudcd.
@@ -19,6 +23,6 @@ Instructions on how to write slides in R-Markdown using the `beamerlatex` tudcd.
 3. Call `sudo texhash` (some kind of updating, see `man texhash` for details)
 4. Validate that tud-styles can be found via `kpsewhich beamerthemetud.sty`
 5. Clone this repo
-6. Call `pandoc -s -t beamer slides.md -o slides.pdf--template template.tex`
+6. Call `pandoc -s -t beamer slides.md -o slides.pdf --template template.tex --citeproc --slide-level=2`
 7. Start making your slides based on this template
 
