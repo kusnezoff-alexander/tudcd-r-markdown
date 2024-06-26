@@ -7,6 +7,10 @@ This repo is meant to get you started more easily with your beamerlatex-slides w
 **What?** - Template for creating presentations using the tud-cd using R-markdown
 - What is R Markdown?: [R Markdown-Cookbook](https://bookdown.org/yihui/rmarkdown-cookbook/)
 
+## 🕑 In Progress
+
+- [ ] slide with several cols: [Tutorial](https://bookdown.org/yihui/rmarkdown-cookbook/multi-column.html)
+
 ## Beamer
 
 Instructions on how to write slides in R-Markdown using the `beamerlatex` tudcd.
