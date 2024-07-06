@@ -1,30 +1,30 @@
 ---
-title: My Presi
+title: Is 5G a Battery Drainer?
 bibliography: paper.bib
 link-citations: TRUE
-author: Your Name
+author: Alexander Kusnezoff
 theme: tud 
-date: June 25, 2024
+date: 16.07.2024
 number_sections: true
 classoption: twocolumn
 ---
 
-<!-- # References
-
-
--->
-
 # title
 
-## Slide 1
+## Start with Why?
 
 Test1
 @NonExistent
 
-## Slide 2
+\pause
 
-Test2
+Text2
 
+## Start with Why?
+
+\begin{center}
+\includegraphics[width=0.8\textwidth]{./img/prosem-einleitung.png}
+\end{center}
 
 ## Slide 3
 
