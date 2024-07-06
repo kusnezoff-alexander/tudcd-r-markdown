@@ -2,14 +2,6 @@
 
 % Include additional LaTeX packages here if needed
 \usepackage{amsmath}
-
-% \usepackage[style=ieee]{biblatex}
-% \setbeamertemplate{bibliography item}{\insertbiblabel}
-% \usepackage[style=ACM-Reference-Format,sortcites,backend=biber]{biblatex}
-% \addbibresource{paper.bib} % Include your bibliography file here
-\bibliographystyle{ACM-Reference-Format}
-\bibliography{paper}
-
 % Theme choice:
 \usetheme{tud}
 \usepackage[ngerman]{babel}
@@ -17,7 +9,18 @@
 \usepackage{tikz}
 \usepackage{graphicx}
 \usepackage{svg}
+
+\graphicspath{ {img/} }
+
+% \bibliographystyle{ACM-Reference-Format}
+% \bibliography{paper}
+\setbeamertemplate{bibliography item}{\insertbiblabel}
+\bibliographystyle{ACM-Reference-Format}
+\usepackage[backend=biber]{biblatex} % Use biblatex with the biber backend
+\addbibresource{paper.bib} % Include your bibliography file here
+
 \title{$title$}
+\subtitle{$subtitle$}
 \author{$author$}
 \date{$date$}
 
@@ -29,6 +32,9 @@
 \makeatletter
 \newcommand*\inpt[1]{\setlength\@tempdima{#1}\the\@tempdima}
 \makeatother
+% Redefine \tightlist to do nothing - else error occurs on lists
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
 % see [StackOverflow-Fix](https://stackoverflow.com/a/67244130)
 \newenvironment{CSLReferences}%
@@ -40,5 +46,20 @@
 
 $body$
 
+\begin{frame}{Neue Section}
+\protect\hypertarget{neue-section}{}
+\hypertarget{refs}{}
+\begin{CSLReferences}{1}{0}
+\leavevmode\vadjust pre{\hypertarget{ref-NonExistent}{}}%
+\emph{{\textless Imaginary} Book {not existing\textgreater{}}}. 2024.
+
+\end{CSLReferences}
+\end{frame}
+
+% Bibliography slide
+\begin{frame}[allowframebreaks]
+    \frametitle{References}
+    \printbibliography
+\end{frame}
 
 \end{document}
