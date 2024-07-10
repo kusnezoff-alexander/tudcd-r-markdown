@@ -55,5 +55,12 @@ contents...
 :::
 ::::::::::::::
 
-# References
+# End
+
+---
+refs: |
+   ::: {#refs}
+   :::
+...
+
 
