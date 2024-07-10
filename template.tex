@@ -9,13 +9,10 @@
 \usepackage{tikz}
 \usepackage{graphicx}
 \usepackage{svg}
-\usepackage[backend=biber]{biblatex} % Use biblatex with the biber backend
+\usepackage[backend=biber,style=authoryear]{biblatex} % Use biblatex with the biber backend
 
 \graphicspath{ {img/} }
 
-% \bibliographystyle{ACM-Reference-Format}
-% \bibliography{paper}
-\setbeamertemplate{bibliography item}{\insertbiblabel}
 % \bibliographystyle{ACM-Reference-Format}
 \addbibresource{paper.bib} % Include your bibliography file here
 
@@ -45,5 +42,11 @@
 \maketitle
 
 $body$
+
+% Bibliography slide
+\begin{frame}[allowframebreaks]
+    \frametitle{References}
+	$refs$
+\end{frame}
 
 \end{document}
