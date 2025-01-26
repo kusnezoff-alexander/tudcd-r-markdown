@@ -16,7 +16,7 @@ classoption: twocolumn
 Test1
 @NonExistent
 
-\pause
+\pause <!--show following text only on next slide-->
 
 Text2
 
