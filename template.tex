@@ -37,6 +37,12 @@
 \newenvironment{CSLReferences}%
   {}
 
+% add support for embedded code-blocks (eg ```cpp ```); see [StackOverflow](https://stackoverflow.com/a/47122900)
+$if(highlighting-macros)$
+$highlighting-macros$
+$endif$
+
+
 \begin{document}
 
 \maketitle
