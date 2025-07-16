@@ -2,7 +2,7 @@
 title: Is 5G a Battery Drainer?
 bibliography: paper.bib
 link-citations: TRUE
-cls: utils/ieee.csl
+csl: utils/ieee.csl
 author: Alexander Kusnezoff
 theme: tud
 date: 16.07.2024
@@ -10,22 +10,11 @@ number_sections: true
 classoption: twocolumn
 ---
 
-# {title}
-
-\title{$title$}
-\subtitle{$subtitle$}
-\author{$author$}
-\date{$date$}
-
-\AtBeginSection[]{
-\partpage{\usebeamertemplate***{part page}}
-}
-
+# title
 
 ## Start with Why?
 
-Test111
-<!-- @NonExistent -->
+Test1
 
 \pause <!--show following text only on next slide-->
 
@@ -66,26 +55,16 @@ contents...
 :::
 ::::::::::::::
 
-## Code Blocks
+## References
 
-\tiny <!--other options: `\small`,`\footnotesize` -->
-```cpp
-/*
-way too much code....
-way too much code....
-way too much code....
-way too much code....
-way too much code....
-way too much code....
-*/
-```
-
-## Ref Example
-
-"some quote" @PXJVWCSQ#computedram19 <!--Chap1-->
-@gaoComputeDRAMInMemoryCompute2019
+"my quote" @PXJVWCSQ#computedram19 <!--Chap1-->
 
 # End
 
-## References
+<!-- --- -->
+<!-- refs: | -->
+<!--    ::: {#refs} -->
+<!--    ::: -->
+<!-- ... -->
+
 

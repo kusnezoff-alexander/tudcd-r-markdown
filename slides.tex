@@ -2,6 +2,14 @@
 
 % Include additional LaTeX packages here if needed
 \usepackage{amsmath}
+
+\usepackage[style=ieee]{biblatex}
+\setbeamertemplate{bibliography item}{\insertbiblabel}
+% \usepackage[style=ACM-Reference-Format,sortcites,backend=biber]{biblatex}
+\addbibresource{paper.bib} % Include your bibliography file here
+% \bibliographystyle{ACM-Reference-Format}
+% \bibliography{paper}
+
 % Theme choice:
 \usetheme{tud}
 \usepackage[ngerman]{babel}
@@ -9,140 +17,55 @@
 \usepackage{tikz}
 \usepackage{graphicx}
 \usepackage{svg}
-\usepackage[backend=biber,style=authoryear]{biblatex} % Use biblatex with the biber backend
-
-\graphicspath{ {img/} }
-
-% \bibliographystyle{ACM-Reference-Format}
-% \addbibresource{paper.bib} % Include your bibliography file here
-\addbibresource{paper.bib} % Include your bibliography file here
-
-\title{Is 5G a Battery Drainer?}
-\subtitle{}
-\author{Alexander Kusnezoff}
-\date{16.07.2024}
+\title{My Presi}
+\author{Your Name}
+\date{June 25, 2024}
 
 \AtBeginSection[]{
-\partpage{\usebeamertemplate***{part page}}
+  \partpage{\usebeamertemplate***{part page}}
 }
 
 \newcommand*\inmm[1]{\pgfmathsetmacro\inmmwert{#1 / 1mm}\inmmwert}
 \makeatletter
 \newcommand*\inpt[1]{\setlength\@tempdima{#1}\the\@tempdima}
 \makeatother
-% Redefine \tightlist to do nothing - else error occurs on lists
-\providecommand{\tightlist}{%
-\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
 % see [StackOverflow-Fix](https://stackoverflow.com/a/67244130)
-% \newenvironment{CSLReferences}%
-% {}
-
-% add support for embedded code-blocks (eg ```cpp ```); see [StackOverflow](https://stackoverflow.com/a/47122900)
-\usepackage{color}
-\usepackage{fancyvrb}
-\newcommand{\VerbBar}{|}
-\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
-% Add ',fontsize=\small' for more characters per line
-\newenvironment{Shaded}{}{}
-\newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
-\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
-\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{#1}}
-\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
-\newcommand{\BuiltInTok}[1]{\textcolor[rgb]{0.00,0.50,0.00}{#1}}
-\newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
-\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{#1}}}
-\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
-\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{#1}}
-\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
-\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{#1}}
-\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
-\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{#1}}}
-\newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
-\newcommand{\ExtensionTok}[1]{#1}
-\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
-\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{#1}}
-\newcommand{\ImportTok}[1]{\textcolor[rgb]{0.00,0.50,0.00}{\textbf{#1}}}
-\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
-\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
-\newcommand{\NormalTok}[1]{#1}
-\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{#1}}
-\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{#1}}
-\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{#1}}
-\newcommand{\RegionMarkerTok}[1]{#1}
-\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
-\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{#1}}
-\newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
-\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{#1}}
-\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
-\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
-
+\newenvironment{CSLReferences}%
+  {}
 
 \begin{document}
 
 \maketitle
 
-\section{title}\label{title}
+\begin{frame}{title}
+\protect\hypertarget{title}{}
+\begin{block}{Slide 1}
+\protect\hypertarget{slide-1}{}
+Test1 \emph{{\textless Imaginary} Book {not existing\textgreater{}}}
+(\protect\hyperlink{ref-NonExistent}{2024})
+\end{block}
 
-\subsection{Start with Why?}\label{start-with-why}
+\begin{block}{Slide 2}
+\protect\hypertarget{slide-2}{}
+Test2
+\end{block}
 
-Test111
-
-\pause
-
-Text2
-
-\subsection{Start with Why?}\label{start-with-why-1}
-
-\begin{center}
-\includegraphics[width=0.8\textwidth]{./img/prosem-einleitung.png}
-\end{center}
-
-\subsection{Slide 3}\label{slide-3}
-
+\begin{block}{Slide 3}
+\protect\hypertarget{slide-3}{}
 Test3
+\end{block}
+\end{frame}
 
-\section{Neue Section}\label{neue-section}
+\begin{frame}{Neue Section}
+\protect\hypertarget{neue-section}{}
+\hypertarget{refs}{}
+\begin{CSLReferences}{1}{0}
+\leavevmode\vadjust pre{\hypertarget{ref-NonExistent}{}}%
+\emph{{\textless Imaginary} Book {not existing\textgreater{}}}. 2024.
 
-\subsection{HMMM}\label{hmmm}
+\end{CSLReferences}
+\end{frame}
 
-\subsection{Twocols}\label{twocols}
-
-This is how to specify several cols on a slide:
-
-contents\ldots{}
-
-contents\ldots{}
-
-\subsection{Code Blocks}\label{code-blocks}
-
-\tiny
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{/*}
-\CommentTok{way too much code....}
-\CommentTok{way too much code....}
-\CommentTok{way too much code....}
-\CommentTok{way too much code....}
-\CommentTok{way too much code....}
-\CommentTok{way too much code....}
-\CommentTok{*/}
-\end{Highlighting}
-\end{Shaded}
-
-\subsection{Ref Example}\label{ref-example}
-
-some quote \cite{PXJVWCSQ#computedram19}
-\cite{gaoComputeDRAMInMemoryCompute2019}
-
-\section{End}\label{end}
-
-% Bibliography slide
-% \begin{frame}[allowframebreaks]
-%     \frametitle{References}
-%
-% \end{frame}
 
 \end{document}

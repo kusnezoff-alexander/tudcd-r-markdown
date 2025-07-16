@@ -14,8 +14,7 @@
 \graphicspath{ {img/} }
 
 % \bibliographystyle{ACM-Reference-Format}
-% \addbibresource{paper.bib} % Include your bibliography file here
-\addbibresource{$bibliography$} % Include your bibliography file here
+\addbibresource{paper.bib} % Include your bibliography file here
 
 \title{$title$}
 \subtitle{$subtitle$}
@@ -23,7 +22,7 @@
 \date{$date$}
 
 \AtBeginSection[]{
-\partpage{\usebeamertemplate***{part page}}
+  \partpage{\usebeamertemplate***{part page}}
 }
 
 \newcommand*\inmm[1]{\pgfmathsetmacro\inmmwert{#1 / 1mm}\inmmwert}
@@ -32,11 +31,11 @@
 \makeatother
 % Redefine \tightlist to do nothing - else error occurs on lists
 \providecommand{\tightlist}{%
-\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
 % see [StackOverflow-Fix](https://stackoverflow.com/a/67244130)
-% \newenvironment{CSLReferences}%
-% {}
+\newenvironment{CSLReferences}%
+  {}
 
 % add support for embedded code-blocks (eg ```cpp ```); see [StackOverflow](https://stackoverflow.com/a/47122900)
 $if(highlighting-macros)$
@@ -50,5 +49,10 @@ $endif$
 
 $body$
 
+% Bibliography slide
+\begin{frame}[allowframebreaks]
+    \frametitle{References}
+	$refs$
+\end{frame}
 
 \end{document}
