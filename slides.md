@@ -2,19 +2,30 @@
 title: Is 5G a Battery Drainer?
 bibliography: paper.bib
 link-citations: TRUE
+cls: utils/ieee.csl
 author: Alexander Kusnezoff
-theme: tud 
+theme: tud
 date: 16.07.2024
 number_sections: true
 classoption: twocolumn
 ---
 
-# title
+# {title}
+
+\title{$title$}
+\subtitle{$subtitle$}
+\author{$author$}
+\date{$date$}
+
+\AtBeginSection[]{
+\partpage{\usebeamertemplate***{part page}}
+}
+
 
 ## Start with Why?
 
-Test1
-@NonExistent
+Test111
+<!-- @NonExistent -->
 
 \pause <!--show following text only on next slide-->
 
@@ -69,12 +80,12 @@ way too much code....
 */
 ```
 
+## Ref Example
+
+"some quote" @PXJVWCSQ#computedram19 <!--Chap1-->
+@gaoComputeDRAMInMemoryCompute2019
+
 # End
 
----
-refs: |
-   ::: {#refs}
-   :::
-...
-
+## References
 

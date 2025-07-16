@@ -24,5 +24,7 @@ Instructions on how to write slides in R-Markdown using the `beamerlatex` tudcd.
 4. Validate that tud-styles can be found via `kpsewhich beamerthemetud.sty`
 5. Clone this repo
 6. Call `pandoc -s -t beamer slides.md -o slides.pdf --template template.tex --citeproc --slide-level=2`
+    - NOTE: try `pandoc -t beamer slides.md -o slides.pdf --citeproc` instead? (2025/07/16)
+    - or when using [zotcite-nvim](): execute `:!pandoc -t beamer slides.md -s -o slides_test.pdf -F ~/.local/share/nvim/lazy/zotcite/python3/zotref.py --citeproc --slide-level=2 --csl=/tmp/code/tudcd-r-markdown/utils/ieee.csl`
 7. Start making your slides based on this template
 
