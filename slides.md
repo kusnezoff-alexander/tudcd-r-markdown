@@ -8,6 +8,8 @@ theme: tud
 date: 16.07.2024
 number_sections: true
 classoption: twocolumn
+mainfontfallback:
+  - "NotoColorEmoji:mode=harf"
 ---
 
 # title
@@ -58,6 +60,10 @@ contents...
 ## References
 
 "my quote" @PXJVWCSQ#computedram19 <!--Chap1-->
+
+## Extra Symbols
+
+- ✓ 🧠, 📙
 
 # End
 

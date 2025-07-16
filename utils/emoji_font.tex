@@ -1,0 +1,12 @@
+% Use fontspec to load Noto Emoji
+\usepackage{fontspec}
+
+% Define Noto Emoji font for emojis
+\newfontfamily\emojiFont{Noto Emoji}
+\newfontfamily\fallbackFont{DejaVu Sans}
+
+% Automatically switch to emoji font for unicode emoji characters
+\newcommand{\emoji}[1]{{\emojiFont #1}}
+% Command for fallback font
+\newcommand{\fallback}[1]{{\fallbackFont #1}}
+
