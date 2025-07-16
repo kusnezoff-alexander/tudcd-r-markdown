@@ -64,6 +64,7 @@ contents...
 ## Extra Symbols
 
 - ✓ 🧠, 📙
+- Other alphabets: ソ, Я
 
 # End
 
