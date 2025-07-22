@@ -85,4 +85,4 @@ graph TD;
 
 ## References {.allowframebreaks}
 
-
+\footnotesize
