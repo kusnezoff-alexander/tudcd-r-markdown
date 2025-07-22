@@ -57,14 +57,12 @@ contents...
 :::
 ::::::::::::::
 
-## References {.allowframebreaks}
-
-"my quote" @PXJVWCSQ#computedram19 <!--Chap1-->
-
 ## Extra Symbols
 
 - ✓ 🧠, 📙
 - Other alphabets: ソ, Я
+
+"my quote" @PXJVWCSQ#computedram19 <!--Chap1-->
 
 ## Mermaid
 
@@ -84,5 +82,7 @@ graph TD;
 <!--    ::: {#refs} -->
 <!--    ::: -->
 <!-- ... -->
+
+## References {.allowframebreaks}
 
 
