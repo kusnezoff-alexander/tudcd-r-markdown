@@ -33,6 +33,15 @@ Text2
 
 Test3
 
+## Small Font
+
+
+\begingroup
+\tiny <!--alternatives: `/footnotesize`,`/scriptsize` (smaller), `\tiny` (very small), `\smalll`)-->
+
+Tiny text..
+
+\endgroup
 
 # Neue Section
 
