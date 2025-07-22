@@ -38,6 +38,7 @@ Test3
 
 \begingroup
 \tiny <!--alternatives: `/footnotesize`,`/scriptsize` (smaller), `\tiny` (very small), `\smalll`)-->
+<!--or set fontsize manually with: `\fontsize{4pt}{5pt}\selectfont`-->
 
 Tiny text..
 
