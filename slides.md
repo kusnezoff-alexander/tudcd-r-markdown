@@ -57,7 +57,7 @@ contents...
 :::
 ::::::::::::::
 
-## References
+## References {.allowframebreaks}
 
 "my quote" @PXJVWCSQ#computedram19 <!--Chap1-->
 
@@ -65,6 +65,17 @@ contents...
 
 - ✓ 🧠, 📙
 - Other alphabets: ソ, Я
+
+## Mermaid
+
+```mermaid
+graph TD;
+    A[Start] --> B{Is it sunny?};
+    B -- Yes --> C[Go outside];
+    B -- No --> D[Stay inside];
+    C --> E[Have fun];
+    D --> E;
+```
 
 # End
 
