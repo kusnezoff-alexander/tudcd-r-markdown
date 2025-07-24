@@ -87,6 +87,21 @@ graph TD;
     D --> E;
 ```
 
+## LaTeX algorithm2e Package
+
+```{=latex}
+\begin{algorithm}[H]
+\SetAlgoLined
+\KwData{Logic Network}
+\KwResult{SubarrayAssignment: \[ NodeId \to \mathcal{P}(S) \]}
+ initialization\;
+ \While{condition}{
+  instructions\;
+ }
+ \caption{Example algorithm}
+\end{algorithm}
+```
+
 # End
 
 <!-- --- -->
