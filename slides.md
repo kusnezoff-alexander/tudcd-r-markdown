@@ -30,6 +30,8 @@ Text2
 
 ## Slide 3
 
+And svg:
+![Some Caption](img/subarrayid_page1.svg){height=40%}
 
 Test3
 
