@@ -27,3 +27,7 @@ Instructions on how to write slides in R-Markdown using the `beamerlatex` tudcd.
     - when using [zotcite](https://github.com/jalvesaq/zotcite): type `:!pandoc -t beamer slides.md -s -o slides_test.pdf -F ~/.local/share/nvim/lazy/zotcite/python3/zotref.py --citeproc --slide-level=2 --csl=<path-to>/utils/ieee.csl`
 7. Start making your slides based on this template
 
+Prerequisites (for fedora):
+```
+sudo dnf install texlive-scheme-basic texlive-beamer
+```
