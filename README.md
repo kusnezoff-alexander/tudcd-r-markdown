@@ -34,7 +34,7 @@ curl https://raw.githubusercontent.com/tud-cd/tud-cd/refs/heads/master/tex/latex
 
 Prerequisites (for fedora):
 ```
-sudo dnf install texlive-scheme-basic texlive-beamer texlive-opensans texlive-fontaxes 'tex(svg.sty)' 'tex(trimspaces.sty)'
+sudo dnf install texlive-scheme-basic texlive-beamer texlive-opensans texlive-fontaxes 'tex(svg.sty)' 'tex(trimspaces.sty)' texlive-xits texlive-tex-gyre 
 # this doesnt work somehow..
 sudo dnf install texlive-scheme-full
 ```
