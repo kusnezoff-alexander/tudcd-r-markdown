@@ -2,7 +2,7 @@
 
 This repo is meant to get you started more easily with your beamerlatex-slides written in R Markdown.
 
-**Why?** - LaTeX is way too complex for most things. Just KISS (Keep It Simple Stupid), use Markdown and focus on the actual work!
+**Why?** - For those who prefer Markdown over LaTeX
 
 **What?** - Template for creating presentations using the tud-cd using R-markdown
 - What is R Markdown?: [R Markdown-Cookbook](https://bookdown.org/yihui/rmarkdown-cookbook/)
