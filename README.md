@@ -20,6 +20,11 @@ Instructions on how to write slides in R-Markdown using the `beamerlatex` tudcd.
 1. Download tud-cd beamerstyle via `https://github.com/tud-cd/tud-cd/archive/master.zip`
 2. Copy contents of `tud-cd-master/tex/latex/tud-beamerstyle/*` to your beamer-folder
     - eg on fedora: `cp ./tud-cd-master/tex/latex/tud-beamerstyle/* /usr/share/texlive/texmf-dist/tex/latex/beamer/`
+```
+cd /usr/share/texlive/texmf-dist/tex/latex/beamer/
+curl https://raw.githubusercontent.com/tud-cd/tud-cd/refs/heads/master/tex/latex/tudmathposter/tudcolors.sty -o tudcolors.sty
+```
+
 3. Call `sudo texhash` (some kind of updating, see `man texhash` for details)
 4. Validate that tud-styles can be found via `kpsewhich beamerthemetud.sty`
 5. Clone this repo
@@ -29,5 +34,5 @@ Instructions on how to write slides in R-Markdown using the `beamerlatex` tudcd.
 
 Prerequisites (for fedora):
 ```
-sudo dnf install texlive-scheme-basic texlive-beamer
+sudo dnf install texlive-scheme-basic texlive-beamer texlive-opensans
 ```
