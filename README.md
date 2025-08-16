@@ -38,3 +38,5 @@ sudo dnf install texlive-scheme-basic texlive-beamer texlive-opensans texlive-fo
 # this doesnt work somehow..
 sudo dnf install texlive-scheme-full
 ```
+- if don't want to install `STIXGeneral` (which is used in the tud template) you can also use `STIXTwo`
+    - just change this line in  eg `/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerfontthemetud.sty`: `\setmathfont[range=\mathfrak]{STIXGeneral}` to `\setmathfont[range=\mathfrak]{STIX Two Math}`
