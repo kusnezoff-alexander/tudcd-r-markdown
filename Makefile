@@ -7,6 +7,7 @@ TUDCD_DIR := $(TARGET_DIR)/tud-cd-master
 
 all:
 
+	mkdir -p theme/tudcd_since_2025_lego theme/tudcd_til_2025
 	if [ ! -d "$(TUDCD_DIR)" ]; then \
 		echo "Downloading zip..."; \
 		mkdir -p "$(TUDCD_DIR)"; \
