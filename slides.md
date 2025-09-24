@@ -1,11 +1,11 @@
 ---
-title: Is 5G a Battery Drainer?
+title: Your Title
 bibliography: paper.bib
 link-citations: TRUE
 csl: utils/ieee.csl
-author: Alexander Kusnezoff
+author: Your name
 theme: tud
-date: 16.07.2024
+date: xx.xx.2025
 number_sections: true
 classoption: twocolumn
 mainfontfallback:
