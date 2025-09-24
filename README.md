@@ -7,34 +7,28 @@ This repo is meant to get you started more easily with your beamerlatex-slides w
 **What?** - Template for creating presentations using the tud-cd using R-markdown
 - What is R Markdown?: [R Markdown-Cookbook](https://bookdown.org/yihui/rmarkdown-cookbook/)
 
-## 🕑 In Progress
-
-- [ ] slide with several cols: [Tutorial](https://bookdown.org/yihui/rmarkdown-cookbook/multi-column.html)
-
 ## Beamer
 
 Instructions on how to write slides in R-Markdown using the `beamerlatex` tudcd.
 
 ### Setup Instructions
 
-1. Download tud-cd beamerstyle via `https://github.com/tud-cd/tud-cd/archive/master.zip`
-2. Copy contents of `tud-cd-master/tex/latex/tud-beamerstyle/*` to your beamer-folder
-    - eg on fedora: `cp ./tud-cd-master/tex/latex/tud-beamerstyle/* /usr/share/texlive/texmf-dist/tex/latex/beamer/`
-```
-cd /usr/share/texlive/texmf-dist/tex/latex/beamer/
-curl https://raw.githubusercontent.com/tud-cd/tud-cd/refs/heads/master/tex/latex/tudmathposter/tudcolors.sty -o tudcolors.sty
+Usage:
+```sh
+git clone git@github.com:kusnezoff-alexander/tudcd-r-markdown.git
+cd tudcd-r-markdown
+make
 ```
 
-3. Call `sudo texhash` (some kind of updating, see `man texhash` for details)
-4. Validate that tud-styles can be found via `kpsewhich beamerthemetud.sty`
-5. Clone this repo
-6. Call `pandoc -s -t beamer slides.md -o slides.pdf --template template.tex --citeproc --slide-level=2`
-    - when using [zotcite](https://github.com/jalvesaq/zotcite): type `:!pandoc -t beamer slides.md -s -o slides_test.pdf -F ~/.local/share/nvim/lazy/zotcite/python3/zotref.py --citeproc --slide-level=2 --csl=<path-to>/utils/ieee.csl`
-7. Start making your slides based on this template
+and then edit `slides.md` (which contains some examples that can be used for inspo)
+
+Debugging:
+1. Call `sudo texhash` (some kind of updating, see `man texhash` for details)
+2. Validate that tud-styles can be found via `kpsewhich beamerthemetud.sty`
 
 Prerequisites (for fedora):
 ```
-sudo dnf install texlive-scheme-basic texlive-beamer texlive-opensans texlive-fontaxes 'tex(svg.sty)' 'tex(trimspaces.sty)' 'tex(selnolig.sty)' texlive-xits texlive-tex-gyre dejavu-sans-fonts 
+sudo dnf install texlive-scheme-basic texlive-beamer texlive-opensans texlive-fontaxes 'tex(svg.sty)' 'tex(trimspaces.sty)' 'tex(selnolig.sty)' texlive-xits texlive-tex-gyre dejavu-sans-fonts
 # this doesnt work somehow..
 sudo dnf install texlive-scheme-full
 ```
