@@ -1,6 +1,7 @@
 # tudcd-r-markdown
 
 This repo is meant to get you started more easily with your beamerlatex-slides written in R Markdown.
+See [Slides](./slides.pdf) for example slides generated with this setup.
 
 **Why?** - For those who prefer Markdown over LaTeX
 
