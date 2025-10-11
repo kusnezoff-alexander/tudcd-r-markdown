@@ -22,7 +22,8 @@ all:
 	# if not installed run: `sudo npm install --global mermaid-filter`
 	TEXINPUTS=theme/tudcd_til_2025/tud-cd-master/tex/latex/tud-beamerstyle:theme/tudcd_til_2025/tud-cd-master/tex/latex/tudmathposter: \
 	pandoc -t beamer slides.md -s -o slides.pdf --template beamer-template.tex \
-		--lua-filter=utils/fallback.lua --lua-filter=utils/emoji.lua --lua-filter=utils/mermaid.lua -F ~/.local/share/nvim/lazy/zotcite/python3/zotref.py \
+		--lua-filter=utils/fallback.lua --lua-filter=utils/emoji.lua --lua-filter=utils/mermaid.lua --lua-filter=utils/callouts.lua \
+		-F ~/.local/share/nvim/lazy/zotcite/python3/zotref.py \
 		--citeproc --slide-level=2 --csl=utils/ieee.csl --include-in-header=./utils/emoji_font.tex --pdf-engine xelatex
 	xdg-open slides.pdf
 
