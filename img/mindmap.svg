@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="mindmap" class="markmap mindmap" xmlns="http://www.w3.org/2000/svg" version="1.1" width="800" height="600"><style style="">.markmap {
+  --markmap-max-width: 9999px;
+  --markmap-a-color: #0097e6;
+  --markmap-a-hover-color: #00a8ff;
+  --markmap-code-bg: #f0f0f0;
+  --markmap-code-color: #555;
+  --markmap-highlight-bg: #ffeaa7;
+  --markmap-table-border: 1px solid currentColor;
+  --markmap-font: 300 16px/20px sans-serif;
+  --markmap-circle-open-bg: #fff;
+  --markmap-text-color: #333;
+  --markmap-highlight-node-bg: #ff02;
+
+  font: var(--markmap-font);
+  color: var(--markmap-text-color);
+}
+
+  .markmap-link {
+    fill: none;
+  }
+
+  .markmap-node &gt; circle {
+      cursor: pointer;
+    }
+
+  .markmap-foreign {
+    display: inline-block;
+  }
+
+  .markmap-foreign p {
+      margin: 0;
+    }
+
+  .markmap-foreign a {
+      color: var(--markmap-a-color);
+    }
+
+  .markmap-foreign a:hover {
+        color: var(--markmap-a-hover-color);
+      }
+
+  .markmap-foreign code {
+      padding: 0.25em;
+      font-size: calc(1em - 2px);
+      color: var(--markmap-code-color);
+      background-color: var(--markmap-code-bg);
+      border-radius: 2px;
+    }
+
+  .markmap-foreign pre {
+      margin: 0;
+    }
+
+  .markmap-foreign pre &gt; code {
+        display: block;
+      }
+
+  .markmap-foreign del {
+      text-decoration: line-through;
+    }
+
+  .markmap-foreign em {
+      font-style: italic;
+    }
+
+  .markmap-foreign strong {
+      font-weight: bold;
+    }
+
+  .markmap-foreign mark {
+      background: var(--markmap-highlight-bg);
+    }
+
+  .markmap-foreign table,
+    .markmap-foreign th,
+    .markmap-foreign td {
+      border-collapse: collapse;
+      border: var(--markmap-table-border);
+    }
+
+  .markmap-foreign img {
+      display: inline-block;
+    }
+
+  .markmap-foreign svg {
+      fill: currentColor;
+    }
+
+  .markmap-foreign &gt; div {
+      width: var(--markmap-max-width);
+      text-align: left;
+    }
+
+  .markmap-foreign &gt; div &gt; div {
+        display: inline-block;
+      }
+
+  .markmap-highlight rect {
+    fill: var(--markmap-highlight-node-bg);
+  }
+
+.markmap-dark .markmap {
+  --markmap-code-bg: #1a1b26;
+  --markmap-code-color: #ddd;
+  --markmap-circle-open-bg: #444;
+  --markmap-text-color: #eee;
+}
+</style><g transform="translate(20.000000000000057,300) scale(0.616382806163828)" style=""><path class="markmap-link" data-depth="3" data-path="1.4.5" d="M598.2968721579763,-95.24806960136152C637.9191815724117,-95.24806960136152,637.9191815724117,-121.56025472575278,677.5414909868473,-121.56025472575278" stroke-width="1.3620168861212205" stroke="rgb(148, 103, 189)" style=""></path><path class="markmap-link" data-depth="3" data-path="1.4.6" d="M598.2968721579763,-95.24806960136152C637.9191815724117,-95.24806960136152,637.9191815724117,-95.43429445560936,677.5414909868473,-95.43429445560936" stroke-width="1.3620168861212205" stroke="rgb(140, 86, 75)" style=""></path><path class="markmap-link" data-depth="3" data-path="1.4.7" d="M598.2968721579763,-95.24806960136152C637.9191815724117,-95.24806960136152,637.9191815724117,-69.30833418546595,677.5414909868473,-69.30833418546595" stroke-width="1.3620168861212205" stroke="rgb(227, 119, 194)" style=""></path><path class="markmap-link" data-depth="3" data-path="1.8.9" d="M469.52436656106084,-24.98087552806623C509.14667597549635,-24.98087552806623,509.14667597549635,-38.229585238518105,548.7689853899318,-38.229585238518105" stroke-width="1.3620168861212205" stroke="rgb(188, 189, 34)" style=""></path><path class="markmap-link" data-depth="3" data-path="1.8.10" d="M469.52436656106084,-24.98087552806623C509.14667597549635,-24.98087552806623,509.14667597549635,-12.103624968374687,548.7689853899318,-12.103624968374687" stroke-width="1.3620168861212205" stroke="rgb(23, 190, 207)" style=""></path><path class="markmap-link" data-depth="3" data-path="1.11.12" d="M543.8161967131274,19.161348832821016C583.4385061275628,19.161348832821016,583.4385061275628,18.975123978573166,623.0608155419984,18.975123978573166" stroke-width="1.3620168861212205" stroke="rgb(255, 127, 14)" style=""></path><path class="markmap-link" data-depth="4" data-path="1.13.16.17" d="M724.097704548809,107.63004129337263C763.7200139632445,107.63004129337263,763.7200139632445,107.53791942398406,803.3423233776799,107.53791942398406" stroke-width="1.176287310741054" stroke="rgb(227, 119, 194)" style=""></path><path class="markmap-link" data-depth="3" data-path="1.13.14" d="M419.9964797930164,94.66066886429253C459.6187892074519,94.66066886429253,459.6187892074519,50.42533207628135,499.24109862188743,50.42533207628135" stroke-width="1.3620168861212205" stroke="rgb(214, 39, 40)" style=""></path><path class="markmap-link" data-depth="3" data-path="1.13.15" d="M419.9964797930164,94.66066886429253C459.6187892074519,94.66066886429253,459.6187892074519,76.55129234642477,499.24109862188743,76.55129234642477" stroke-width="1.3620168861212205" stroke="rgb(148, 103, 189)" style=""></path><path class="markmap-link" data-depth="3" data-path="1.13.16" d="M419.9964797930164,94.66066886429253C459.6187892074519,94.66066886429253,459.6187892074519,107.63004129337263,499.24109862188743,107.63004129337263" stroke-width="1.3620168861212205" stroke="rgb(140, 86, 75)" style=""></path><path class="markmap-link" data-depth="3" data-path="1.13.18" d="M419.9964797930164,94.66066886429253C459.6187892074519,94.66066886429253,459.6187892074519,138.52355594380796,499.24109862188743,138.52355594380796" stroke-width="1.3620168861212205" stroke="rgb(127, 127, 127)" style=""></path><path class="markmap-link" data-depth="2" data-path="1.2" d="M237.73385648661306,11.143774522809988C277.3561659010486,11.143774522809988,277.3561659010486,-148.24290844316903,316.9784753154841,-148.24290844316903" stroke-width="1.7334760368815536" stroke="rgb(255, 127, 14)" style=""></path><path class="markmap-link" data-depth="2" data-path="1.3" d="M237.73385648661306,11.143774522809988C277.3561659010486,11.143774522809988,277.3561659010486,-121.74548902226528,316.9784753154841,-121.74548902226528" stroke-width="1.7334760368815536" stroke="rgb(44, 160, 44)" style=""></path><path class="markmap-link" data-depth="2" data-path="1.4" d="M237.73385648661306,11.143774522809988C277.3561659010486,11.143774522809988,277.3561659010486,-95.24806960136152,316.9784753154841,-95.24806960136152" stroke-width="1.7334760368815536" stroke="rgb(214, 39, 40)" style=""></path><path class="markmap-link" data-depth="2" data-path="1.8" d="M237.73385648661306,11.143774522809988C277.3561659010486,11.143774522809988,277.3561659010486,-24.98087552806623,316.9784753154841,-24.98087552806623" stroke-width="1.7334760368815536" stroke="rgb(127, 127, 127)" style=""></path><path class="markmap-link" data-depth="2" data-path="1.11" d="M237.73385648661306,11.143774522809988C277.3561659010486,11.143774522809988,277.3561659010486,19.161348832821016,316.9784753154841,19.161348832821016" stroke-width="1.7334760368815536" stroke="rgb(31, 119, 180)" style=""></path><path class="markmap-link" data-depth="2" data-path="1.13" d="M237.73385648661306,11.143774522809988C277.3561659010486,11.143774522809988,277.3561659010486,94.66066886429253,316.9784753154841,94.66066886429253" stroke-width="1.7334760368815536" stroke="rgb(44, 160, 44)" style=""></path><path class="markmap-link" data-depth="2" data-path="1.19" d="M237.73385648661306,11.143774522809988C277.3561659010486,11.143774522809988,277.3561659010486,169.78753918726832,316.9784753154841,169.78753918726832" stroke-width="1.7334760368815536" stroke="rgb(188, 189, 34)" style=""></path><g class="markmap-highlight" style=""></g><g data-depth="2" data-path="1.2" class="markmap-node" transform="translate(316.10034471429117, -169.10989409386178)" style=""><line stroke="#ff7f0e" stroke-width="1.7334760368815536" x1="-0.11242712392345044" x2="94.98111547072178" y1="20.875" y2="20.875" style=""></line><text x="0" y="12" fill="black" font-family="" font-size="">Reliable AI</text></g><g data-depth="2" data-path="1.3" class="markmap-node" transform="translate(315.87373032844926, -142.61247467607507)" style=""><line stroke="#2ca02c" stroke-width="1.7334760368815536" x1="0.11418722741524301" x2="118.98111547072178" y1="20.875" y2="20.875" style=""></line><text x="0" y="12" fill="black" font-family="" font-size="">Explainable AI</text></g><g data-depth="3" data-path="1.4.5" class="markmap-node" transform="translate(677.059935488963, -142.2410155210348)" style=""><line stroke="#9467bd" stroke-width="1.3620168861212205" x1="-0.5090022387661641" x2="52.981115470721775" y1="20.6875" y2="20.6875" style=""></line><text x="0" y="12" fill="black" font-family="" font-size="">RAG</text></g><g data-depth="3" data-path="1.4.6" class="markmap-node" transform="translate(676.4273037373194, -116.11505525828834)" style=""><line stroke="#8c564b" stroke-width="1.3620168861212205" x1="0.12362949205435514" x2="119.98111547072178" y1="20.6875" y2="20.6875" style=""></line><text x="0" y="12" fill="black" font-family="" font-size="">Fact Checking</text></g><g data-depth="3" data-path="1.4.7" class="markmap-node" transform="translate(675.539730931718, -89.98909499554189)" style=""><line stroke="#e377c2" stroke-width="1.3620168861212205" x1="1.0112023681309048" x2="213.98111547072176" y1="20.6875" y2="20.6875" style=""></line><text x="0" y="12" fill="black" font-family="" font-size="">Human-in-the-loop systems</text></g><g data-depth="2" data-path="1.4" class="markmap-node" transform="translate(314.29687211209614, -116.11505525828834)" style=""><line stroke="#d62728" stroke-width="1.7334760368815536" x1="1.6910454221469853" x2="285.98111547072176" y1="20.875" y2="20.875" style=""></line><circle stroke-width="1.4858366030413317" r="5.943346412165327" stroke="#d62728" fill="var(--markmap-circle-open-bg)" cx="284" cy="20.875" style=""></circle><text x="0" y="12" fill="black" font-family="" font-size="">Validation and Verification Techniques</text></g><g data-depth="3" data-path="1.8.9" class="markmap-node" transform="translate(543.2358183688142, -58.910346037477574)" style=""><line stroke="#bcbd22" stroke-width="1.3620168861212205" x1="4.542609343158877" x2="587.9811154707218" y1="20.6875" y2="20.6875" style=""></line><text x="0" y="12" fill="black" font-family="" font-size="">investigating whether LLMs are capable of performing data annotation in general</text></g><g data-depth="3" data-path="1.8.10" class="markmap-node" transform="translate(545.4830774123623, -32.78438577473112)" style=""><line stroke="#17becf" stroke-width="1.3620168861212205" x1="2.295350359050168" x2="349.9811154707218" y1="20.6875" y2="20.6875" style=""></line><text x="0" y="12" fill="black" font-family="" font-size="">validation evaluate generated data annotations</text></g><g data-depth="2" data-path="1.8" class="markmap-node" transform="translate(315.5243665735652, -45.84736590610435)" style=""><line stroke="#7f7f7f" stroke-width="1.7334760368815536" x1="0.4635510190623954" x2="155.98111547072176" y1="20.875" y2="20.875" style=""></line><circle stroke-width="1.4858366030413317" r="5.943346412165327" stroke="#7f7f7f" fill="var(--markmap-circle-open-bg)" cx="154" cy="20.875" style=""></circle><text x="0" y="12" fill="black" font-family="" font-size="">LLM Benchmarking</text></g><g data-depth="3" data-path="1.11.12" class="markmap-node" transform="translate(620.2659052797463, -1.705636816666806)" style=""><line stroke="#ff7f0e" stroke-width="1.3620168861212205" x1="1.8043525978163322" x2="297.98111547072176" y1="20.6875" y2="20.6875" style=""></line><text x="0" y="12" fill="black" font-family="" font-size="">Customer Service Chatbots utilize RAG</text></g><g data-depth="2" data-path="1.11" class="markmap-node" transform="translate(314.81619665636157, -1.705636816666806)" style=""><line stroke="#1f77b4" stroke-width="1.7334760368815536" x1="1.1717208669958126" x2="230.98111547072176" y1="20.875" y2="20.875" style=""></line><circle stroke-width="1.4858366030413317" r="5.943346412165327" stroke="#1f77b4" fill="var(--markmap-circle-open-bg)" cx="229" cy="20.875" style=""></circle><text x="0" y="12" fill="black" font-family="" font-size="">Fields to draw inspiration from</text></g><g data-depth="3" data-path="1.13.14" class="markmap-node" transform="translate(498.5423710429423, 29.744571277161583)" style=""><line stroke="#d62728" stroke-width="1.3620168861212205" x1="-0.2918301520665828" x2="75.98111547072178" y1="20.6875" y2="20.6875" style=""></line><text x="0" y="12" fill="black" font-family="" font-size="">Ragflow</text></g><g data-depth="3" data-path="1.13.15" class="markmap-node" transform="translate(497.01272413127134, 55.870531539908036)" style=""><line stroke="#9467bd" stroke-width="1.3620168861212205" x1="1.2378167194695981" x2="237.98111547072176" y1="20.6875" y2="20.6875" style=""></line><text x="0" y="12" fill="black" font-family="" font-size="">TODO more literature research</text></g><g data-depth="4" data-path="1.13.16.17" class="markmap-node" transform="translate(799.3576875851244, 86.94928048833425)" style=""><line stroke="#e377c2" stroke-width="1.176287310741054" x1="2.9940779423444734" x2="423.98111547072176" y1="20.59375" y2="20.59375" style=""></line><text x="0" y="12" fill="black" font-family="" font-size="">Repoformer ICML 24 selective RAG for Code Completion</text></g><g data-depth="3" data-path="1.13.16" class="markmap-node" transform="translate(497.09770456451446, 86.94928048833425)" style=""><line stroke="#8c564b" stroke-width="1.3620168861212205" x1="1.1528363377175883" x2="228.9811154707218" y1="20.6875" y2="20.6875" style=""></line><circle stroke-width="1.4858366030413317" r="5.943346412165327" stroke="#8c564b" fill="var(--markmap-circle-open-bg)" cx="227" cy="20.6875" style=""></circle><text x="0" y="12" fill="black" font-family="" font-size="">Frameworks in other domains</text></g><g data-depth="3" data-path="1.13.18" class="markmap-node" transform="translate(493.877892205017, 117.84229985924034)" style=""><line stroke="#7f7f7f" stroke-width="1.3620168861212205" x1="4.372648579654856" x2="569.9811154707218" y1="20.6875" y2="20.6875" style=""></line><text x="0" y="12" fill="black" font-family="" font-size="">HaluEval systematically test and measure hallucination bias in various models</text></g><g data-depth="2" data-path="1.13" class="markmap-node" transform="translate(315.99647977459614, 73.79343556820095)" style=""><line stroke="#2ca02c" stroke-width="1.7334760368815536" x1="-0.008562212893215904" x2="105.98111547072178" y1="20.875" y2="20.875" style=""></line><circle stroke-width="1.4858366030413317" r="5.943346412165327" stroke="#2ca02c" fill="var(--markmap-circle-open-bg)" cx="104" cy="20.875" style=""></circle><text x="0" y="12" fill="black" font-family="" font-size="">Frameworks</text></g><g data-depth="2" data-path="1.19" class="markmap-node" transform="translate(315.9020571652319, 148.92104880766655)" style=""><line stroke="#bcbd22" stroke-width="1.7334760368815536" x1="0.0858604334979064" x2="115.98111547072178" y1="20.875" y2="20.875" style=""></line><text x="0" y="12" fill="black" font-family="" font-size="">Model Choice</text></g><g data-depth="1" data-path="1" class="markmap-node" transform="translate(-2.2661435500000358, -10.094422647916668)" style=""><line stroke="#1f77b4" stroke-width="2.4763943384022196" x1="1.2755857780260471" x2="241.98111547072176" y1="21.25" y2="21.25" style=""></line><circle stroke-width="1.4858366030413317" r="5.943346412165327" stroke="#1f77b4" fill="var(--markmap-circle-open-bg)" cx="240" cy="21.25" style=""></circle><text x="0" y="12" fill="black" font-family="" font-size="">Text Data Annotation with LLMs</text></g></g></svg>

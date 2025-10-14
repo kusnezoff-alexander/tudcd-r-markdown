@@ -28,6 +28,36 @@ Text2
 \includegraphics[width=0.8\textwidth]{./img/prosem-einleitung.png}
 \end{center}
 
+## Markmap Mindmap
+
+```{.markmap}
+# Text Data Annotation with LLMs
+
+## Reliable AI
+## Explainable AI
+
+## Validation and Verification Techniques
+### RAG
+### Fact Checking
+### Human-in-the-loop systems
+
+## LLM Benchmarking
+### investigating whether LLMs are capable of performing data annotation in general
+### validation evaluate generated data annotations
+
+## Fields to draw inspiration from
+### Customer Service Chatbots utilize RAG
+
+## Frameworks
+### Ragflow
+### TODO more literature research
+### Frameworks in other domains
+#### Repoformer ICML 24 selective RAG for Code Completion
+### HaluEval systematically test and measure hallucination bias in various models
+
+## Model Choice
+```
+
 ## Slide 3
 
 And svg:
