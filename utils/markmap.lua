@@ -11,14 +11,38 @@ function CodeBlock(block)
     f:close()
 
     -- Run shell commands synchronously
-    os.execute("npx markmap-cli " .. tmp_md)
+    os.execute("npx markmap-cli " .. tmp_md .. " --no-open")
     os.execute("node utils/extract_markmap_to_svg.js " .. tmp_html .. " " .. svg_path)
     os.execute("rm " .. tmp_md .. " " .. tmp_html)
 
     -- Replace code block with image markdown
-	-- return pandoc.Para{
-	--   pandoc.Image({pandoc.Str("Some Caption")}, svg_path, {height="40%"})
-	-- }
-	return pandoc.Para{pandoc.Image({}, svg_path)}
+	-- return pandoc.Para{pandoc.Image({}, svg_path)}
+
+	os.execute("rsvg-convert -f pdf -o img/mindmap.pdf " .. svg_path)
+	-- return pandoc.RawBlock(
+	--   "latex",
+	--   "\\includegraphics[width=1.2\\linewidth]{img/mindmap.pdf}"
+	-- )
+	return pandoc.RawBlock(
+	  "latex",
+	  [[
+	\begin{center}
+	\vspace*{-2cm}% adjust vertical spacing before
+	\hspace*{-0.9cm}% shift left by 0.5cm
+	\raisebox{5.3cm}{% shift up by 0.3cm
+	\resizebox{1.3\linewidth}{!}{\includegraphics{img/mindmap.pdf}}
+	\vspace*{-1cm}% adjust vertical spacing before
+	}%
+	\end{center}
+	]]
+	)
+-- 	os.execute("rsvg-convert -f pdf -o img/mindmap.pdf " .. svg_path)
+--     local latex_code = string.format([[
+-- \begin{frame}
+--     \includesvg[width=0.7\textwidth]{%s}
+-- \end{frame}
+-- ]], svg_path)
+--
+--     return pandoc.RawBlock("latex", latex_code)
   end
 end

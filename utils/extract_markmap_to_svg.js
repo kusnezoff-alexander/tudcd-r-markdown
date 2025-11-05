@@ -54,14 +54,16 @@ async function captureAlignedSvg(inputHtml, outputSvg) {
         const txt = div.textContent.trim();
         if (txt) {
           const textEl = document.createElementNS(xmlns, 'text');
+		  const fontSize = getComputedStyle(div).fontSize;
           // compute target position via bounding box
           const bbox = fo.getBBox();
           // place at top-left of the fo bounding box
           textEl.setAttribute('x', bbox.x);
-          textEl.setAttribute('y', bbox.y + parseFloat(window.getComputedStyle(div).fontSize || 12));
+          textEl.setAttribute('y', bbox.y + parseFloat(fontSize || 12));
           textEl.setAttribute('fill', 'black');
+		  textEl.setAttribute('font-weight', 'bold');
           textEl.setAttribute('font-family', getComputedStyle(div).fontFamily);
-          textEl.setAttribute('font-size', getComputedStyle(div).fontSize);
+          textEl.setAttribute('font-size', fontSize);
           textEl.textContent = txt;
           fo.parentNode.appendChild(textEl);
         }

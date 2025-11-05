@@ -18,10 +18,13 @@ Usage:
 ```sh
 git clone git@github.com:kusnezoff-alexander/tudcd-r-markdown.git
 cd tudcd-r-markdown
-make
+
+export 	TEXINPUTS="theme/tudcd_til_2025/tud-cd-master/tex/latex/tud-beamerstyle:theme/tudcd_til_2025/tud-cd-master/tex/latex/tudmathposter:"
+quarto preview slides.qmd   # live preview in browser
+quarto render slides.qmd    # for actual rendering
 ```
 
-and then edit `slides.md` (which contains some examples that can be used for inspo)
+and then edit `slides.qmd` (which contains some examples that can be used for inspo)
 
 Debugging:
 1. Call `sudo texhash` (some kind of updating, see `man texhash` for details)
@@ -39,3 +42,4 @@ sudo dnf install texlive-scheme-full
 ## Common Errors
 
 - don't put emojis into `::: notes`-section
+- `npm install puppeteer` for rendering `markmap`s

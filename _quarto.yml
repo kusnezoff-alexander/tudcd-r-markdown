@@ -1,0 +1,29 @@
+project:
+  type: default
+  pre-render: utils/setup-theme.sh
+  # post-render: # rather use `quarto preview`
+  #   - xdg-open slides.pdf
+
+format:
+  beamer:
+    pdf-engine: xelatex
+    # template: beamer-template.tex
+    include-in-header:
+      - utils/emoji_font.tex
+      - text: |
+          \usepackage[ruled,vlined]{algorithm2e}
+    cite-method: citeproc
+    csl: utils/ieee.csl
+    slide-level: 2
+    keep-tex: true
+    filters:
+      # - utils/fallback.lua
+      # # - utils/emoji.lua
+      # - utils/mermaid.lua
+      # - utils/callouts.lua
+      - utils/markmap.lua
+      - /home/alex/.local/share/nvim/lazy/zotcite/python3/zotref.py
+execute:
+  echo: false
+environment:
+  TEXINPUTS: "theme/tudcd_til_2025/tud-cd-master/tex/latex/tud-beamerstyle:theme/tudcd_til_2025/tud-cd-master/tex/latex/tudmathposter:"

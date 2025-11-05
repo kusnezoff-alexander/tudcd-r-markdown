@@ -1,0 +1,171 @@
+---
+title: Your Title
+bibliography: paper.bib
+link-citations: TRUE
+csl: utils/ieee.csl
+author: Your name
+theme: tud
+date: xx.xx.2025
+number_sections: true
+classoption: twocolumn
+mainfontfallback:
+  - "NotoColorEmoji:mode=harf"
+---
+
+# title
+
+## Start with Why?
+
+Test1
+
+\pause <!--show following text only on next slide-->
+
+Text2
+
+## Start with Why?
+
+\begin{center}
+\includegraphics[width=0.8\textwidth]{./img/prosem-einleitung.png}
+\end{center}
+
+## Markmap Mindmap
+
+::: notes
+
+Frameworks in other domains
+- HaluEval systematically test and measure hallucination bias in various models
+- Repoformer ICML 24 selective RAG for Code Completion
+
+Other fields to draw inspot from
+- Customer Service Chatbots utilize RAG
+:::
+
+```{.markmap}
+# Text Data Annotation with LLMs
+
+## Reliable AI
+## Explainable AI
+
+## Validation and Verification Techniques
+### RAG
+### Fact Checking
+### Human-in-the-loop systems
+
+## LLM Benchmarking
+### General Performance Assessment on Data Annotation
+### Validation of generated data annotations
+
+## Fields to draw inspiration from
+### Customer Service Chatbots utilize RAG
+
+## Frameworks
+### Ragflow
+### Frameworks in other domains
+#### Repoformer
+### HaluEval
+
+## Model Choice
+### LlaMa
+### FLAN
+### GPT
+```
+
+## Slide 3
+
+And svg:
+![Some Caption](img/subarrayid_page1.svg){height=40%}
+
+Test3
+
+## Small Font
+
+
+\begingroup
+\tiny <!--alternatives: `/footnotesize`,`/scriptsize` (smaller), `\tiny` (very small), `\smalll`)-->
+<!--or set fontsize manually with: `\fontsize{4pt}{5pt}\selectfont`-->
+
+Tiny text..
+
+\endgroup
+
+## Callout
+
+> [!question] Warning
+>
+> TEST-IDX123
+
+<!--[See Callouts documented in Quarto](https://quarto.org/docs/authoring/callouts.html)-->
+
+::: {.callout-note title="Tip with Title"}
+
+My private note....
+
+:::
+
+# Neue Section
+
+## HMMM
+
+## Twocols
+
+This is how to specify several cols on a slide:
+
+<!-- see [StackOverflowI](https://stackoverflow.com/a/34809186) for twocol-layout -->
+
+:::::::::::::: {.columns}
+::: {.column width="40%"}
+
+contents...
+
+:::
+::: {.column width="60%"}
+
+contents...
+
+:::
+::::::::::::::
+
+## Extra Symbols
+
+- ✓ 🧠, 📙
+- Other alphabets: ソ, Я
+
+"my quote" @PXJVWCSQ#computedram19 <!--Chap1-->
+
+## Mermaid
+
+```{mermaid}
+graph TD;
+    A[Start] --> B{Is it sunny?};
+    B -- Yes --> C[Go outside];
+    B -- No --> D[Stay inside];
+    C --> E[Have fun];
+    D --> E;
+```
+
+## LaTeX algorithm2e Package
+
+```{=latex}
+\begin{algorithm}[H]
+\SetAlgoLined
+\KwData{Logic Network}
+\KwResult{SubarrayAssignment: \[ NodeId \to \mathcal{P}(S) \]}
+ initialization\;
+ \While{condition}{
+  instructions\;
+ }
+ \caption{Example algorithm}
+\end{algorithm}
+```
+
+# End
+
+<!-- --- -->
+<!-- refs: | -->
+<!--    ::: {#refs} -->
+<!--    ::: -->
+<!-- ... -->
+
+## References {.allowframebreaks}
+
+\footnotesize
