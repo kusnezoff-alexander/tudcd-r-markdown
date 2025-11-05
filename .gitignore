@@ -3,3 +3,4 @@ theme/**
 /.quarto/
 **/*.quarto_ipynb
 slides_files/**
+node_modules/**
