@@ -35,3 +35,7 @@ sudo dnf install texlive-scheme-full
 ```
 - if don't want to install `STIXGeneral` (which is used in the tud template) you can also use `STIXTwo`
     - just change this line in  eg `/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerfontthemetud.sty`: `\setmathfont[range=\mathfrak]{STIXGeneral}` to `\setmathfont[range=\mathfrak]{STIX Two Math}`
+
+## Common Errors
+
+- don't put emojis into `::: notes`-section
